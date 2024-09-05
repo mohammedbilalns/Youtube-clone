@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="header">
-     
+     <div class="header-top">
       <div class="left-section">
         <img
           class="hamburger-menu"
@@ -30,6 +30,7 @@
         <input type="text" class="search-bar" placeholder="Search" />
         <button class="search-button">
           <img class="search-icon" src="./static/icons/search.svg" alt="" />
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search-button">
           <img
@@ -37,27 +38,54 @@
             src="./static/icons/voice-search-icon.svg"
             alt=""
           />
+          <div class="tooltip">Search with your voice</div>
+
         </button>
       </div>
 
       <div class="right-section">
-        <img class="upload-icon" src="./static/icons/upload.svg" alt="" />
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="./static/icons/upload.svg" alt="" />
+          <div class="tooltip">Create</div>
+        </div>
         <div class="notification-icon-container">
           <img
             class="notification-icon"
             src="./static/icons/notifications.svg"
             alt=""
           />
+          <div class="tooltip">Notifications</div>
+
           <div class="notifications-count">3+</div>
         </div>
         <img
           class="current-user-picture"
-          src="./static/images/my-channel.jpeg"
+          src="./static/images/myavatar.png"
           alt=""
         />
       </div>
+      <div class="header-bottom">
+
+         <div class="category-button active-button" >All</div>
+         <div class="category-button">JavaScript</div>
+         <div class="category-button">Gaming</div>
+         <div class="category-button">Computers</div>
+         <div class="category-button">Podcasts</div>
+         <div class="category-button">Live</div>
+         <div class="category-button">Mathematical Analysis</div>
+         <div class="category-button">Smartphones</div>
+         <div class="category-button">Recently Uploaded</div>
+         <div class="category-button">Watched</div>
+         <div class="category-button">New to you</div>
+
+         
+
+
+
+      </div>
+
+    </div>
       
-   
     </div>
 
     <div class="sidebar">
