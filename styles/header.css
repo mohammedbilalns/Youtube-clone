@@ -46,6 +46,7 @@
     height:36px ;
     padding-left: 10px;
     margin-left: -144px;
+    margin-right: -1px;
     font-size: 16px;
     border-width: 1px;
     border-style: solid;
@@ -53,6 +54,18 @@
     border-radius: 20px 0 0 20px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
     
+}
+
+.search-bar:active .search-bar:focus, textarea:focus{
+    border: solid #1C62B9 1px;
+    margin-right: 1px;
+
+}
+
+.search-bar:focus-visible{
+    outline: solid 0.5px #1C62B9;
+    margin-right: 1px;
+
 }
 .search-bar::placeholder{
     font-family: Roboto,Arial;
@@ -68,7 +81,7 @@
    border-style: solid;
     border-color: rgb(186, 182, 182);
    border-radius: 0 20px 20px 0 ;
-   margin-left: -1px;
+   
    margin-right: 10px;
    
     
@@ -103,7 +116,6 @@
 }
 .search-icon{
     height: 25px;
-  
     
 }
 
