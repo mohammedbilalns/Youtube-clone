@@ -9,7 +9,7 @@
     right: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+justify-content: space-between;
 }
 
 
@@ -37,15 +37,40 @@
     margin-right: -144px;
     max-width: 500px;
     display: flex;
+    position: relative;
 
     align-items: center;
 
 }
+.search-bar-icon-container{
+    position: absolute;
+    /* top:8px; */
+    left: -180px;
+      border-width: 1px;
+   border-style: solid;
+  
+   border-radius: 20px 0px 0px 20px ;
+   z-index: 200;
+   height: 38px;
+   border-color:#1C62B9 ;
+   opacity: 0;
+   border-right: none;
+   
+}
+.search-bar-icon{
+    height: 20px;
+   width: 20px;
+   padding-top: 10px;
+   padding-left: 14px;
+   padding-right: 5px;
+}
+
 .search-bar{
+   
     flex: 1;
     height:36px ;
     padding-left: 10px;
-    margin-left: -144px;
+    margin-left: -144px; 
     margin-right: -1px;
     font-size: 16px;
     border-width: 1px;
@@ -53,19 +78,22 @@
     border-color: rgb(186, 182, 182);
     border-radius: 20px 0 0 20px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+ 
     
 }
 
-.search-bar:active .search-bar:focus, textarea:focus{
-    border: solid #1C62B9 1px;
+.search-bar:focus-visible{
+    /* outline: solid 0.5px #1C62B9; */
+    outline: none;
+    box-shadow: 1px 0px 0px 0px #1C62B9, 0px 1px 0px 0px #1C62B9, 0px -1px 0px 0px #1C62B9; /* Custom outline on all sides except left */
     margin-right: 1px;
-
+    border: none;
+ 
 }
 
-.search-bar:focus-visible{
-    outline: solid 0.5px #1C62B9;
-    margin-right: 1px;
-
+.search-bar:focus  {
+    border-radius: 1px;
+    border-left: none;
 }
 .search-bar::placeholder{
     font-family: Roboto,Arial;
