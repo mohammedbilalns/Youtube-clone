@@ -1,12 +1,6 @@
-
-
-
-function displayIcon(){
-   
-   document.getElementById("search-bar-icon-container").style.opacity=1
+function displayIcon() {
+  document.getElementById("search-bar-icon-container").style.opacity = 1;
 }
-
-function removeIcon(){
-
-    document.getElementById("search-bar-icon-container").style.opacity = 0
+function removeIcon() {
+  document.getElementById("search-bar-icon-container").style.opacity = 0;
 }
